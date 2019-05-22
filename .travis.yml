@@ -4,6 +4,7 @@ go:
   - 1.12
 env:
   - CGO_ENABLED=0
+  - GOPATH=..
 install: true
 script:
         #- go vet $(go list ./... | grep -v vendor)
