@@ -10,4 +10,4 @@ install: true
 script:
   - go vet $(go list ./... | grep -v vendor)
   - cd eventservice && go build
-  - cd bookingservice && go build
+    #  - cd bookingservice && go build
