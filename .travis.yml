@@ -1,0 +1,13 @@
+language: go
+go:
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+env:
+  - CGO_ENABLED=0
+install: true
+script:
+  - go vet $(go list ./... | grep -v vendor)
+  - cd eventservice && go build
+  - cd bookingservice && go build
