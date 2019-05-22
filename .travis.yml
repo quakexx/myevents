@@ -6,6 +6,6 @@ env:
   - CGO_ENABLED=0
 install: true
 script:
-  - go vet $(go list ./... | grep -v vendor)
-  - cd eventservice && go build
+        #- go vet $(go list ./... | grep -v vendor)
+  - cd eventsservice && go build
     #  - cd bookingservice && go build
